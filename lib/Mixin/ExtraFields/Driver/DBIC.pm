@@ -53,6 +53,14 @@ the following values may be in the argument to C<-setup> in the import call:
   name_column  - the name of the column that stores extra field names
   value_column - the name of the column that stores extra field values
 
+=begin Pod::Coverage
+
+  id_column
+  name_column
+  value_column
+
+=end Pod::Coverage
+
 =cut
 
 sub from_args {
