@@ -1,0 +1,7 @@
+Revision history for Mixin-ExtraFields-Driver-DBIC
+
+0.002     2008-10-05
+          add prereq for module used in testing
+
+0.001     2008-10-03
+          first revision
