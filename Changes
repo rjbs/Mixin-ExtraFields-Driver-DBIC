@@ -1,5 +1,9 @@
 Revision history for Mixin-ExtraFields-Driver-DBIC
 
+{{$NEXT}}
+        - update bugtracker, repo
+        - update to @RJBS dzil configuration
+
 0.003     2008-10-06
           eliminate accidental prereq on parent.pm in tests
 
