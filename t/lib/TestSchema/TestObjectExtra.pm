@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 package TestSchema::TestObjectExtra;
-use base 'DBIx::Class';
+use parent 'DBIx::Class';
 use Mixin::ExtraFields::Driver::DBIC -setup => { table => 'object_info' };
 
 __PACKAGE__->belongs_to(object => 'TestSchema::TestObject',

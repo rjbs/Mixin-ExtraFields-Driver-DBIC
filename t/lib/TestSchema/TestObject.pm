@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 package TestSchema::TestObject;
-use base 'DBIx::Class';
+use parent 'DBIx::Class';
 
 use Mixin::ExtraFields -fields => {
   driver => { class => 'DBIC', rs_moniker => 'TestObjectExtra' }

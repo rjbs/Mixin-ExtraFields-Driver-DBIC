@@ -1,7 +1,8 @@
 use strict;
 use warnings;
 package Mixin::ExtraFields::Driver::DBIC;
-use base 'Mixin::ExtraFields::Driver';
+use Mixin::ExtraFields::Driver 0.004 ();
+use parent 'Mixin::ExtraFields::Driver';
 # ABSTRACT: store Mixin::ExtraFields data in a DBIx::Class store
 
 use Carp ();
@@ -22,7 +23,7 @@ So, you might create:
 ...and elsewhere;
 
   package My::Schema::Object;
-  use base 'DBIx::Class';
+  use parent 'DBIx::Class';
   ...
   use Mixin::ExtraFields -fields => {
     driver => { class => 'DBIC', rs_moniker => 'ObjectExtra' }

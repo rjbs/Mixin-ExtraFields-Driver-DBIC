@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 package TestSchema;
-use base 'DBIx::Class::Schema';
+use parent 'DBIx::Class::Schema';
 
 __PACKAGE__->load_classes(qw(TestObject TestObjectExtra));
 
