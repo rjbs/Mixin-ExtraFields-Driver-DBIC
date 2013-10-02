@@ -7,6 +7,7 @@ use File::Spec;
 use File::Temp qw(tempdir);
 use Test::More 'no_plan';
 
+use SQL::Translator 0.11016; # needed for deployment
 use TestSchema;
 
 my $tempdir = tempdir(CLEANUP => 1);
